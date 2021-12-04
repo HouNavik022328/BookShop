@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.bookshop.controller;
 
 import com.bookshop.books.BookDAO;
@@ -14,11 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-/**
- *
- * @author VODUCMINH
- */
 @WebServlet(name = "DeleteProductController", urlPatterns = {"/DeleteProductController"})
 public class DeleteProductController extends HttpServlet {
 
