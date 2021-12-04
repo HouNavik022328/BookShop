@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.bookshop.controller;
 
 import com.bookshop.shopping.Cart;
@@ -14,11 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-/**
- *
- * @author VODUCMINH
- */
 @WebServlet(name = "DeleteCartController", urlPatterns = {"/DeleteCartController"})
 public class DeleteCartController extends HttpServlet {
     private static final String ERROR = "cart.jsp";
