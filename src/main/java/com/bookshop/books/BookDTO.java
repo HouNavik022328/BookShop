@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.bookshop.books;
 
-/**
- *
- * @author VODUCMINH
- */
 public class BookDTO {
     private String ID;
     private String name;
