@@ -1,0 +1,74 @@
+:root {
+    --modal-background-color: rgba(234, 219, 174, 0.9);
+}
+.item:hover .quick-nav-modal {
+    display: flex;
+}
+.quick-nav-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--modal-background-color);
+    --growth-from:0.8;
+    --growth-to:1;
+    animation: fadeIn ease .35s;
+}
+.quick-nav-modal .btn {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    padding: 0;
+    border-radius: 4px;
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    font-size: 1.2rem;
+    z-index: 2;
+    transition: ease .2s;
+    color: var(--primary-color);
+}
+.quick-nav-modal .btn:hover {
+    font-weight: 700;
+    border-color: var(--primary-color);
+}
+.quick-nav-modal .btn:nth-child(2){
+    margin-top: 8px;
+}
+.quick-nav-modal .btn--slide-down {
+    animation: slideDown .35s ease-in-out  ;
+}
+.quick-nav-modal .btn--slide-up {
+    animation: slideUp .35s ease-in-out  ;
+}
+.quick-nav-modal .btn .product-view,
+.quick-nav-modal .btn .add-to-cart {
+    display: block;
+    padding: 6px 0px;
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

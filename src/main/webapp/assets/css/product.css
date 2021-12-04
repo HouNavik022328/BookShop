@@ -1,0 +1,112 @@
+.product {
+    background-color: var(--white-color);
+    padding: 0 40px;
+}
+.product-info {
+    display: flex;
+    padding: 20px 0;
+    height: 550px;
+    overflow: hidden;
+}
+.product-info__item {
+    flex-basis: 50%;
+    position: relative;
+}
+.product-info__item:first-child {
+    align-self:center;
+}
+.product-info__img {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 400px;
+}
+.product-view {
+    font-family: 'Montserrat', sans-serif;
+}
+.product-view__item {
+    margin-bottom: 5px;
+}
+.product-view__name {
+    font-size: 4rem;
+}
+.product-view__price {
+    margin-top: 10px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.product-view__description {
+    background-color: #e8e8e4;
+    height: 260px;
+    overflow: hidden;
+    
+}
+.product-view__description,
+.product-view {
+    padding: 10px 16px;
+}
+.product-view__description-paragraph,
+.product-view__author {
+    font-size: 1.6rem;
+}
+
+.product-view__description-header,
+.product-view__rating {
+    font-size: 2rem;
+}
+.product-view__description-paragraph {
+    margin-top: 10px;
+    padding-right: 20px;
+    overflow: scroll;
+    height: calc(100% - 40px);
+}
+
+/* product rating */
+.product-review {
+    padding: 20px 10px;
+    border-top: 1px solid #ccc;
+}
+.product-review__container {
+    display: flex;
+    margin-top: 20px;
+}
+.product-review__overall {
+    background-color: #ffe5d9;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+    height: 100px;
+}
+.overall__ratings-summary {
+    color: var(--rating-color);
+}
+.product-ratings {
+    flex:1;
+}
+.product-rating {
+    display: flex;
+    padding: 0 20px;
+    min-height: 100px;
+    flex:1
+}
+.product-rating + .product-rating {
+    margin-top: 10px;
+}
+.product-rating__avatar {
+    padding: 0 5px;
+    width: 6rem;
+    height: 6rem;
+}
+.avatar__img {
+    border-radius: 50%;
+}
+.product-rating__main {
+    flex: 1;
+}
+.client__name {
+    font-size: 2rem;
+}
+.client__comment {
+    font-size: 1.6rem;
+    padding-right: 20px;
+}

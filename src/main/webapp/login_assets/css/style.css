@@ -1,0 +1,341 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* LOGIN */
+.all-container {
+    background: linear-gradient(-135deg,#680606,#eb9580);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sign-container {
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
+
+.container-wrap {
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.login-header,
+.sign-header {
+    width: 100%;
+}
+
+.login-header h3,
+.sign-header h3{
+
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.login-form-email {
+    display: inline-block;
+    background-color: #e6e6e6;
+    width: auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+.login-form-email-input {
+    display: inline-block;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.login-form-email-input::placeholder {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 600;
+}
+
+.login-form-email-input:focus {
+    background-color: transparent;
+}
+
+.login-form-email-input:focus::placeholder{
+    font-size: 0;
+    transition: ease-out 0.3s;
+}
+
+.login-form-email-icon{
+    text-align: center;
+    transform: translateY(10%);
+    padding-right: 15px;
+    color: rgb(117,117,117);
+}
+
+.login-form-button {
+    margin-bottom: 1rem;
+}
+
+.login-form-button > button {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 600;
+    background-color: rgb(240, 136, 118);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login-form-button > button:hover {
+    background-color:  rgb(182, 90, 74);
+    color: white;
+}
+
+.login-form-forgot a {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-form-forgot a:hover {
+    cursor: pointer;
+}
+
+.login-form-forgot a > span {
+    color: var(--grey);
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-form-account {
+    font-size: 14px;
+    margin-top: 6rem;
+}
+
+.login-with-google-btn {
+    text-decoration: none;
+    margin-top: 50px;
+    display: inline-block;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+}
+/*.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}*/
+
+.login-form-account a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.login-form-account a:hover {
+    cursor: pointer;
+    color: rgb(182, 90, 74);
+}
+
+.login-form-account a > span {
+    font-size: 10px;
+}
+
+.sign-header .login-form-forgot a {
+    text-decoration: none;
+}
+
+.sign-header .login-form-forgot a:hover {
+    color: rgb(182, 90, 74);
+}
+
+.sign-header .login-form-account {
+    display: none
+}
+
+#check-password {
+    transform: translateY(-150%);
+    color: red;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#check-password-empty {
+    transform: translateY(-150%);
+    color: red;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#check-userid {
+    transform: translateY(-150%);
+    color: red;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+/* END LOGIN */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100 ;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+#back-top__button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100 !important; 
+}
+
+#back-top__button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#back-top__button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#back-top__button:active {
+    background-color: #555;
+}
+
+#back-top__button .show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

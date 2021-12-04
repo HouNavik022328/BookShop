@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Noto+Serif+Display:ital,wght@1,500;1,600&family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="header-top__wrapper">
+                <div class="header-top">
+                    <a href="landing.jsp" class="header__logo no-deco font-black">
+                        <i class="fas fa-bookmark"></i>
+                        Books.
+                    </a>
+                    <div class="header__searchbar">
+                        <input type="text" placeholder="Find your favourite books..." class="searchbar__input">
+                        <div class="searchbar__logo">
+                            <i class="fas fa-search"></i>
+                        </div>   
+                    </div>
+                    <div class="header-right">
+                        <a href="cart.jsp" class="shopping-cart__link"><i class="fas fa-shopping-cart header-right__logo"></i></a>
+                        <div class="header-right__user">
+                            <i class="far fa-user header-right__logo"></i>
+                            <ul class="user-menu">
+                                <li class="sign "><a class="sign__link sign__link--sign-up si no-deco" href="">Sign Up</a></li>
+                                <li class="sign "><a class="sign__link sign__link--log-in no-deco" href="">Log In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="list__item">
+                            <a href="/landing.jsp" class="list__item-link no-deco">Home</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item-link no-deco">Popular</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="/category.html" class="list__item-link no-deco">
+                                Category
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="list__sub-menu">
+                                <ul class="sub-menu__content">
+                                    <h3 class="sub-menu__header">Content</h3>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Horror</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Love</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Science</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Educational</a></li>
+                                </ul>
+                                <ul class="sub-menu__content">
+                                    <h3 class="sub-menu__header">Type</h3>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Used</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Sales</a></li>
+                                    <li class="sub-menu__item"><a class="sub-menu__item-link no-deco" href="">Rare</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item-link no-deco">Bestseller</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="user">
+                    <div class="user-avatar">
+                        <img class="user-avatar__img width-100" src="./assets/img/male.jpg"></img>
+                    </div>
+                    <div class="user-nickname">
+                        <h3 class="user-nickname__name">nickname1</h3>
+                        <p class="user-nickname__customize"><i class="fas fa-user-edit"></i> Customize Profile</p>
+                    </div>
+                </div>
+                <div class="history-voucher">
+                    <div class="history-col">
+                        <h2 class="section-header">Recently Bought Items</h2>
+                        <div class="history-item__container">
+                            <div class="history-item">
+                                <div class="history-item__status">
+                                    <div class="status-deliver status-deliver--success"><i class="fas fa-truck"></i> Successfully Delivered</div>
+                                    <div class="status-review status-review--reviewed">Commented</div>
+                                </div>
+                                <div class="history-item__info">
+                                    <div class="history-item__details">
+                                        <div class="history-item-picture">
+                                        </div>
+                                        <div class="history-item-description">
+                                            <h3 class="item-name">Code dạo ký sự</h3>
+                                            <p class="item-author">Phạm Huy Hoàng</p>
+                                            <p class="item-amount">x1</p>
+                                        </div>
+                                        <div class="history-item-price">
+                                            <span class="item__price">500.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-item__btn">
+                                    <button class="btn btn--buy btn--primary">Re-Purchase</button>
+                                    <button class="btn btn--buy btn--secondary"><a class="product-view no-deco" href="/product.html">View the comments</a></button>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <div class="history-item__status">
+                                    <div class="status-deliver status-deliver--success"><i class="fas fa-truck"></i> Successfully Delivered</div>
+                                    <div class="status-review status-review--reviewed">Commented</div>
+                                </div>
+                                <div class="history-item__info">
+                                    <div class="history-item__details">
+                                        <div class="history-item-picture">
+                                        </div>
+                                        <div class="history-item-description">
+                                            <h3 class="item-name">Code dạo ký sự</h3>
+                                            <p class="item-author">Phạm Huy Hoàng</p>
+                                            <p class="item-amount">x1</p>
+                                        </div>
+                                        <div class="history-item-price">
+                                            <span class="item__price">500.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history-item__btn">
+                                    <button class="btn btn--buy btn--primary">Re-Purchase</button>
+                                    <button class="btn btn--buy btn--secondary"><a class="product-view no-deco" href="/product.html">View the comments</a></button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="voucher-col">
+                        <h2 class="section-header">Available Vouchers</h2>
+                        <div class="voucher-container">
+                            <div class="voucher voucher--1">
+                                <h3 class="voucher__brand-logo">
+                                    <i class="fas fa-bookmark"></i>
+                                    Books.
+                                </h3>
+                                <h3 class="voucher__name">Register Voucher</h3>
+                                <p class="voucher__date">Valid until: 23 June 2022</p>
+                                <span class="voucher__content">Up to <span class="voucher__value">40%</span> off for the first product</span>
+                                <p class="voucher__condition">Only available for new registed customer</p>
+                            </div>
+                            <div class="voucher voucher--2">
+                                <h3 class="voucher__brand-logo">
+                                    <i class="fas fa-bookmark"></i>
+                                    Books.
+                                </h3>
+                                <h3 class="voucher__name">double books</h3>
+                                <p class="voucher__date">Valid until: 23 June 2022</p>
+                                <span class="voucher__content">Buy one get<span class="voucher__value">100%</span> off for the second one</span>
+                                <p class="voucher__condition">The second book is only available in the Horror section</p>
+                            </div>
+                            <div class="voucher voucher--3">
+                                <h3 class="voucher__brand-logo">
+                                    <i class="fas fa-bookmark"></i>
+                                    Books.
+                                </h3>
+                                <h3 class="voucher__name">Free Ship</h3>
+                                <p class="voucher__date">Valid until: 23 June 2022</p>
+                                <span class="voucher__content">Transfer fee is<span class="voucher__value">0</span></span>
+                                <p class="voucher__condition">Minimum tolal price to use this voucher is 100.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-nav">
+                <a href="#" class="footer-nav__link no-deco">
+                    <i class="fas fa-chevron-up"></i>
+                    Back to top</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+.header-bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+.header-bottom__col {
+    flex-basis: 60%;
+}
+.col-img {
+    height: 100%;
+    flex-basis: 40%;
+    background-image: url(/assets/img/Heaven-will-be-a-kind-of-library.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.header-bottom__quote {
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+.header-bottom__quote-title {
+    font-weight: 700;
+    font-size:5rem;
+}
+.header-bottom__quote-title span {
+    color: #bb3e03;
+}
+.description {
+    text-align: end;
+    font-size: 2rem;
+}
+
+/* Content-sections */
+
+/* section:popular */
+
+.section--popular {
+    background-color: #0d1b2a   ;
+}
+.section-hint__container,
+.section-popular__container {
+    display: flex;
+}
+.section-popular__header {
+    flex:1;
+    padding-right: 20px;
+}
+.section-popular__item-wrapper {
+    padding-top: 5px;
+    flex-basis: 70%;
+    justify-content: space-between;
+}
+.section-popular__item {
+    flex-direction: column;
+    flex-basis: 30%;
+    padding: 20px;
+    cursor: pointer;
+    transition: linear .2s;
+}
+.section-popular__item .item__img {
+    min-width: 60px;
+    max-width: 160px;
+}
+
+
+.item-1 {
+    background-color: #d4e09b;
+}
+.item-2 {
+    background-color: #fdfcdc;
+}
+.item-3 {
+    background-color: #fed9b7;
+}
+
+.item__description {
+    line-height: 2rem;
+}
+.section-popular__item .item__description * {
+    margin-bottom: 8px;
+}
+
+
+
+/* Blog section */
+.section-blog__container {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+.section-col-2 {
+    flex-basis: 50%;
+}
+.section-col-2.section-header {
+    padding-right: 30px;
+}
+.section-img {
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(/assets/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header-description {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* hint section */
+
+.section-hint__container {
+    min-height: 500px;
+    background-color: #E8D6C4;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-hint__item {
+    position: relative;
+    min-height: 500px;
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-basis: 30%;
+    background-color: var(--white-color);
+}
+.hint-img {
+    height: 50%;
+}
+.hint-content {
+    height: 50%;
+    padding: 10px 16px;
+}
+.hint-content__item {
+    margin: 10px 0;
+}
+.hint-content__item.go-to {
+    position: absolute;
+    bottom: 0;
+}
+.hint-header {
+    font-size: 2rem;
+}
+.hint-header__link {
+    color: var(--text-color);
+    transition: ease .2s;
+}
+.hint-header__link:hover {
+    color: var(--secondary-color);
+}
+.hint-description {
+    font-size: 1.6rem;
+}
+
+/* recent section */
+.section-recent__container .item-wrapper {
+    margin-top: 20px;
+}
+.section-recent__item .item__description * {
+    color: var(--text-color);
+}
+.section-recent__item-wrapper {
+    overflow:scroll;
+}
+
+.item--recent {
+    min-width: 200px;
+}

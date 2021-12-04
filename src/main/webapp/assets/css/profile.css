@@ -1,0 +1,193 @@
+.container {
+    background-color:var(--white-color);
+    
+}
+.user {
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-avatar {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.user-avatar__img {
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.user-nickname {
+    margin-left: 30px;
+    font-size: 1.6rem;
+}
+.user-nickname__name {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.user-nickname__customize {
+    cursor: pointer;
+    transition: ease-out .2s;
+}
+.user-nickname__customize:hover {
+    color: var(--primary-color);
+}
+
+/* Buying History */
+
+.history-voucher {
+    display: flex;
+    padding: 20px 0;
+    
+}
+.history-col {
+    flex-basis: 65%;
+    padding:0 10px;
+}
+.section-header {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
+.history-item__container {
+    padding:10px
+}
+.history-item {
+    padding: 10px;
+}
+.history-item + .history-item { 
+    margin-top: 10px;
+}
+.history-item__status {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    padding: 12px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+.status-deliver,
+.status-review {
+    padding: 0 10px;
+    font-weight: 600;
+}
+.status-deliver {
+    border-right: 1px solid #ccc;
+}
+.status-deliver--success {
+    color: var(--success-color);
+}
+.status-review--reviewed {
+    color:var(--rating-color)
+}
+.history-item__details {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.item-amount {
+    font-size: 1.6rem;
+}
+.history-item-picture {
+    background-image: url(/assets/img/book1.jpg);
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid #ccc;
+}
+.history-item-description {
+    flex:1;
+    margin-left: 10px;
+}
+.history-item-price {
+    font-size: 1.8rem;
+}
+.history-item__btn {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.history-item__btn .product-view {
+    display: block;
+}
+.voucher-col {
+    flex: 1;
+    padding: 0 8px;
+}
+.voucher-container {
+    padding: 10px;
+}
+.voucher {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    transition: ease .3s;
+}
+.voucher:hover {
+    transform: translateY(-4px);
+}
+.voucher + .voucher {
+    margin-top: 20px;
+}
+.voucher__brand-logo {
+    margin: 4px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+
+}
+.voucher__name {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 4px;
+}
+.voucher__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 4px 0;
+}
+
+.voucher__value {
+    margin: 0 4px;
+    font-size: 3rem;
+    padding: 0 4px;
+    font-weight: 600;
+}
+.voucher__date,
+.voucher__condition {
+    color: #888;
+}
+.voucher--1 {
+    box-shadow: 0px 4px 10px rgba(230, 57, 70, 0.4);
+}
+.voucher--2 {
+    box-shadow: 0px 4px 10px rgba(157, 78, 221, 0.4);
+}
+.voucher--3 {
+    box-shadow:0px 4px 10px rgba(0, 127, 95, 0.4) ;
+}
+.voucher--1 .voucher__content {
+    background-color: #e63946;
+}
+.voucher--2 .voucher__content {
+    background-color: #9d4edd;
+}
+.voucher--3 .voucher__content {
+    background-color: #55a630;
+}
