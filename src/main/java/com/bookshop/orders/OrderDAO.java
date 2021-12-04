@@ -6,10 +6,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/**
- *
- * @author VODUCMINH
- */
 public class OrderDAO {
     public boolean insertOrder(Order order) throws SQLException {
         boolean check = false;
