@@ -8,11 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *
- * @author VODUCMINH
- */
 public class BookDAO {
     public List<BookDTO> getAllBook() throws SQLException {
         List<BookDTO> list = new ArrayList<>();
